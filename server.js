@@ -18,7 +18,7 @@ MongoClient.connect('mongodb://pereslop:legion11@ds123752.mlab.com:23752/blog', 
 
 app.put('/quotes', (req, res) => {
   db.collection('quotes')
-  .findOneAndUpdate({name: 'Mykola'}, {
+  .findOneAndUpdate({name: 'Taras'}, {
     $set: {
       name: req.body.name,
       quote: req.body.quote
