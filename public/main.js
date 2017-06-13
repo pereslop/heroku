@@ -14,7 +14,6 @@ update.addEventListener('click', function () {
 })
 .then(data => {
   console.log(data)
-  window.location.reload()
 })
 })
 
@@ -35,6 +34,5 @@ del.addEventListener('click', function () {
   }).
   then(data => {
     console.log(data)
-    window.location.reload()
   })
 })
