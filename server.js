@@ -11,7 +11,7 @@ app.use(bodyParser.json())
 MongoClient.connect('mongodb://pereslop:legion11@ds123752.mlab.com:23752/blog', (err, database) => {
   if (err) return console.log(err);
   db = database
-  app.listen(3000, () => {
+  app.listen(process.env.PORT || 3000, () => {
     console.log('listening on 3000')
   })
 })
