@@ -27,7 +27,7 @@ del.addEventListener('click', function () {
       'Content-Type': 'application/json'
     },
     body: JSON.stringify({
-      'name': ''
+      'name': 'Mykola'
     })
   })
   .then(res => {
